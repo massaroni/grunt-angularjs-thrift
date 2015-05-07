@@ -87,9 +87,37 @@ Example: Load Thrift In Your App
 
     // app/src/thrift/thrift-services.js
 
+    // the generated thrift js module returns a configuration object with instructions for generating angular services
     var generated = require('../generated/compiled_thrift');
+
+    // the generated angular thrift services will depend on your custom angular service, for error handling
     require('./thrift-retry-service');
+
+    // generate the angular thrift services, in the ngThriftServices module
     require('grunt-angularjs-thrift/runtime/ng-thrift-services')(generated);
+
+    // your module must depend on the ngThriftServices module, provided by grunt-angularjs-thrift
+    angular.module('my-module', ['ngThriftServices']);
+
+    // the naming convention for angular thrift services is: [Thrift][your service name]. So, a thrift service named
+    // SomethingService would have an angular thrift service name ThriftSomethingService
+    angular.module('my-module').service('MyService', ['ThriftSomethingService', function (ThriftSomethingService) {
+      ThriftSomethingService.callRoomService().then(function (response) {
+        console.log('response from server:', response);
+      }, function (reason) {
+        console.log('thrift rpc call failed:', reason);
+      });
+    }]);
+
+```
+
+```idl
+
+    // app/src/thrift/services.thrift
+
+    service SomethingService {
+     string callRoomService()
+    }
 
 ```
 
