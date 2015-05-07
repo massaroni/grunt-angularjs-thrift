@@ -1,0 +1,24 @@
+{
+  "name": "grunt-angularjs-thrift",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kevin Massaroni",
+    "email": "kevinmassaroni@gmail.com"
+  },
+  "dependencies": {
+    "precondition": "1.0.0",
+    "concat-files": "0.1.0",
+    "fs-extra": "0.12.0",
+    "merge": "1.2.0",
+    "path": "0.11.14",
+    "shelljs": "0.3.0",
+    "recursive-readdir": "1.2.1",
+    "node-uuid": "1.4.2",
+    "underscore": "1.6.0"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
