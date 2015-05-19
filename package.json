@@ -1,6 +1,6 @@
 {
   "name": "grunt-angularjs-thrift",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Kevin Massaroni",
     "email": "kevinmassaroni@gmail.com"
