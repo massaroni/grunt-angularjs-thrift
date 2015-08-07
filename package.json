@@ -5,6 +5,10 @@
     "name": "Kevin Massaroni",
     "email": "kevinmassaroni@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/massaroni/grunt-angularjs-thrift"
+  },
   "dependencies": {
     "precondition": "1.0.0",
     "concat-files": "0.1.0",
