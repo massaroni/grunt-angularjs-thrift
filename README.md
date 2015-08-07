@@ -1,6 +1,6 @@
 Thrift Angular Code Generator
 =============================
-Make Thrift rpc calls to your Thrift http server, from javascript in a browser, in a website or cordova/phonegap app.  This is a grunt module that compiles Thrift IDL into commonjs javascript, for use with browserify or webpack.  The generated angularjs module generates an angular service for each Thrift service, at runtime.
+Make Thrift rpc calls to your Thrift http server, from javascript in a browser, in a website or cordova/phonegap app.  This is a grunt module that compiles Thrift IDL into commonjs javascript, for use with browserify or webpack.  The generated angularjs module generates an angular service for each Thrift service, at runtime. For Thrift 0.9.x support, see [grunt-angularjs-thrift-0.9](https://github.com/massaroni/grunt-angularjs-thrift-0.9).
 
 Dependencies
 ============
